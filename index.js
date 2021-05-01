@@ -22,18 +22,8 @@ const questions = [
   },
   {
     type: "input",
-    name: "usage",
+    name: "useage",
     message: "What is the usage of this project?"
-  },
-  {
-    type: "input",
-    name: "credits",
-    message: "List any credits or collaborators:"
-  },
-  {
-    type: "input",
-    name: "tests",
-    message: "Are there any tests? If so list"
   },
   {
     type: "checkbox",
@@ -41,6 +31,16 @@ const questions = [
     message: "Choose any appropriate licenses",
     choices: ["MIT","Apache","GNU"]
 
+  },
+  {
+    type: "input",
+    name: "credits",
+    message: "Name any credits or collaborators:"
+  },
+  {
+    type: "input",
+    name: "tests",
+    message: "Are there any tests? If so list"
   },
   {
     type: "input",
@@ -63,7 +63,8 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions)
     .then(answers => {
-        console.log(answers);
+        generateMarkdown(answers);
+        console.log(generateMarkdown(answers));
     })
 }
 
