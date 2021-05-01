@@ -20,12 +20,15 @@ function generateMarkdown(data) {
 
   ## Table of Contents
   * [Installation](#installation)
-  * [Usage](#usage)
+  * [Useage](#useage)
   * [Credits](#credits)
   * [License](#license)
   * [Contributions](#contributions)
   * [Tests](#tests)
   * [Questions](#questions)
+  
+  ## Installation
+  ${data.installation}
 
   ## Useage
   ${data.useage}
@@ -40,10 +43,10 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
-  Reach out to me at the links below:
+  Reach out to me at the links below with any questions, comments, or concerns:
 
-  Github: [${data.github}](https://github.com/${data.github})
-  eMail: [${data.email}](mailto:${data.email})
+  Github: [${data.github}](https://github.com/${data.github})</br>
+  email: [${data.email}](mailto:${data.email})
   `;
 }
 

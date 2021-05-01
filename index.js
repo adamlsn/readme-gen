@@ -23,7 +23,7 @@ const questions = [
   {
     type: "input",
     name: "useage",
-    message: "What is the usage of this project?"
+    message: "What is the useage of this project?"
   },
   {
     type: "checkbox",
@@ -56,16 +56,20 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    
-}
+    fs.writeFile(fileName, data, error => {
+      if(error) {
+        console.log(`There was an error! Error code: ${error}`)
+        throw(error);
+      };
+    });
+};
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
     .then(answers => {
-        generateMarkdown(answers);
-        console.log(generateMarkdown(answers));
-    })
+      writeToFile("README.md", generateMarkdown(answers));
+    });
 }
 
 // Function call to initialize app
