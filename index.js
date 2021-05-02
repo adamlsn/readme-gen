@@ -29,7 +29,7 @@ const questions = [
     type: "checkbox",
     name: "license",
     message: "Choose any appropriate licenses",
-    choices: ["MIT","Apache","GNU"]
+    choices: ["MIT","Apache","GNU", "ISC", "Native"]
 
   },
   {
@@ -61,6 +61,10 @@ function writeToFile(fileName, data) {
         console.log(`There was an error! Error code: ${error}`)
         throw(error);
       };
+      console.log(`
+      Success! Your README.md for ${data.title} was created.
+      Check the main folder to see the final result.
+      `)
     });
 };
 
