@@ -26,10 +26,10 @@ const questions = [
     message: "What is the useage of this project?"
   },
   {
-    type: "checkbox",
+    type: "list",
     name: "license",
-    message: "Choose any appropriate licenses",
-    choices: ["MIT","Apache","GNU", "ISC", "Native"]
+    message: "Is there a license you'd like to include?",
+    choices: ["MIT","Apache","GNU", "ISC", "Native", "No License"]
 
   },
   {
