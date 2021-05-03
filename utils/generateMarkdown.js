@@ -42,10 +42,9 @@ function generateMarkdown(data) {
   ## Table of Contents
   ---
   * [Installation](#installation)
-  * [Useage](#useage)
-  * [Credits](#credits)
+  * [Usage](#usage)
   * [License](#license)
-  * [Contributions](#contributions)
+  * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
   
@@ -53,17 +52,17 @@ function generateMarkdown(data) {
   ---
   ${data.installation}
 
-  ## Useage
+  ## Usage
   ---
-  ${data.useage}
+  ${data.usage}
 
   ## License
   ---
   ${licenseData}
 
-  ## Contributions
+  ## Contributing
   ---
-  ${data.credits}
+  ${data.contributing}
 
   ## Tests
   ---

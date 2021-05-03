@@ -20,8 +20,8 @@ const questions = [
   },
   {
     type: "input",
-    name: "useage",
-    message: "What is the useage of this project?"
+    name: "usage",
+    message: "What is the usage of this project?"
   },
   {
     type: "list",
@@ -32,7 +32,7 @@ const questions = [
   },
   {
     type: "input",
-    name: "credits",
+    name: "contributing",
     message: "Name any credits or collaborators:"
   },
   {
