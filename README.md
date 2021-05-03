@@ -42,6 +42,6 @@
   
   Reach out to me at the links below with any questions, comments, or concerns:
 
-  Github: [adamlsn](https://github.com/adamlsn)</br>
+  GitHub: [adamlsn](https://github.com/adamlsn)</br>
   email: [adamlsn@gmail.com](mailto:adamlsn@gmail.com)
   
