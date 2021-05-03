@@ -36,11 +36,11 @@ function generateMarkdown(data) {
   ${badge}
 
   ## Description
-  ---
+  
   ${data.description}
 
   ## Table of Contents
-  ---
+  
   * [Installation](#installation)
   * [Usage](#usage)
   * [License](#license)
@@ -49,27 +49,27 @@ function generateMarkdown(data) {
   * [Questions](#questions)
   
   ## Installation
-  ---
+  
   ${data.installation}
 
   ## Usage
-  ---
+  
   ${data.usage}
 
   ## License
-  ---
+  
   ${licenseData}
 
   ## Contributing
-  ---
+  
   ${data.contributing}
 
   ## Tests
-  ---
+  
   ${data.tests}
 
   ## Questions
-  ---
+  
   Reach out to me at the links below with any questions, comments, or concerns:
 
   Github: [${data.github}](https://github.com/${data.github})</br>
